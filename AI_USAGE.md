@@ -33,6 +33,7 @@ The AI output is shown as a draft. The doctor can review and edit it before savi
 2. "Make the AI return a consistent structured JSON response."
 3. "Debug the Mongoose error caused by a mismatch between string and string array fields."
 4. "Keep the Gemini API key on the backend and never expose it to the frontend."
+5. "Write clean, optimal, and maintainable code following development best practices."
 
 ## AI Issue and Fix
 
@@ -46,6 +47,8 @@ I then updated the consultation schema and added backend normalization/validatio
 
 ## Engineering Decision
 
-The Gemini API call is made from the backend instead of the frontend.
+- The Gemini API call is made from the backend instead of the frontend.
 
-This keeps the Gemini API key private and prevents exposing it in the browser.
+- I decided to keep the UI simple instead of using a fashionable or overly designed interface. I used a clean black-and-white style so doctors can quickly find and understand the required information.
+
+I also kept the main workflow simple with the dashboard, patient profile, consultation history, and consultation modal instead of adding unnecessary screens or navigation.
